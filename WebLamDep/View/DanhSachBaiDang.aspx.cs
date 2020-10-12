@@ -20,6 +20,7 @@ namespace WebLamDep.View
             if (!IsPostBack)
             {
                 load_danhSAch();
+                load_danhSachLoaiBai();
                 Paging();
             }
         }
@@ -45,6 +46,25 @@ namespace WebLamDep.View
                 //Debug.WriteLine("data: so cot "+ da);
                 sqlDataAdapter.Fill(dataTable);
                 return dataTable;
+            }
+        }
+
+
+        private void load_danhSachLoaiBai()
+        {
+            using (SqlConnection sqlConnection = conn.connectDatabase())
+            {
+               // SqlCommand cmd = new SqlCommand("select * from tblloaibai", sqlConnection);
+              //  cmd.CommandType = CommandType.Text;
+              //  cmd.CommandText = "select * from tblloaibai";
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("sp_danhSachLoaiBai",sqlConnection);
+                DataTable dataTable = new DataTable();
+                //Debug.WriteLine("data: so cot "+ da);
+                sqlDataAdapter.Fill(dataTable);
+                ddlLoaiBai.DataSource = dataTable;
+                ddlLoaiBai.DataTextField = "sTenLoaiBai";
+                ddlLoaiBai.DataValueField = "iMaLoaiBai";
+                ddlLoaiBai.DataBind();
             }
         }
 
@@ -123,6 +143,46 @@ namespace WebLamDep.View
             catch (Exception exx)
             {
                 Debug.WriteLine("nhan dc loi  " + exx.Message);
+            }
+        }
+
+        protected void ddlLoaiBai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Debug.WriteLine("ddl + " + ddlLoaiBai.SelectedValue + ddlLoaiBai.DataTextField);  
+        }
+
+        protected void btnTimLoaiBai_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("ddl + " + ddlLoaiBai.SelectedValue);
+
+            using (SqlConnection sqlConnection = conn.connectDatabase())
+            {
+                SqlCommand sqlCommand = new SqlCommand("sp_xemtheoloai", sqlConnection);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                sqlCommand.Parameters.AddWithValue("@id", ddlLoaiBai.SelectedValue);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                DataTable dataTable = new DataTable();
+                //Debug.WriteLine("data: so cot "+ da);
+                sqlDataAdapter.Fill(dataTable);
+                rptDanhSach.DataSource = dataTable;
+                rptDanhSach.DataBind();
+            }
+        }
+
+        protected void btnTimKiem_Click(object sender, EventArgs e)
+        {
+
+            using (SqlConnection sqlConnection = conn.connectDatabase())
+            {
+                SqlCommand sqlCommand = new SqlCommand("sp_xemtheotentimkiem", sqlConnection);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                sqlCommand.Parameters.AddWithValue("@ten", txtTimKiem.Text);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                DataTable dataTable = new DataTable();
+                //Debug.WriteLine("data: so cot "+ da);
+                sqlDataAdapter.Fill(dataTable);
+                rptDanhSach.DataSource = dataTable;
+                rptDanhSach.DataBind();
             }
         }
     }

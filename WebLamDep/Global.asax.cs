@@ -20,9 +20,9 @@ namespace WebLamDep
             Application.Lock();
             Session["login"] = false;
             Session["tenTK"] = "HUY";
-            Session["maNguoiDung"] = "1";
-            Session["maGV"] = "1";
-            Session["quyen"] = "2";
+            Session["maNguoiDung"] = "";
+            Session["maGV"] = "";
+            Session["quyen"] = "5";
             Session["type"] = "1";
             Session["mess"] = "1";
             Session["sessId"] = Session.SessionID;

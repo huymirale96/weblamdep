@@ -84,15 +84,15 @@ namespace WebLamDep.View
             }
         }
 
-        DataTable load_danhSAchBai(String id)
+        DataTable load_danhSAchBai(String tuTimKiem)
         {
 
             using (SqlConnection sqlConnection = conn.connectDatabase())
             {
-                SqlCommand cmd = new SqlCommand("sp_danhSachBaiVietTheoID", sqlConnection);
+                SqlCommand cmd = new SqlCommand("sp_danhSachBaiVietTimKiem", sqlConnection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@id", id);
-
+                //cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@tuTimKiem", tuTimKiem);
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
 
                 DataTable dataTable = new DataTable();

@@ -1,6 +1,41 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Layout/App.Master" AutoEventWireup="true"  CodeBehind="QuanLyLoaiBai.aspx.cs" Inherits="WebLamDep.View.ThemLoaiBai" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <script>
+function suaLoaiBai(id, ten)
+{
+    //alert(ten + id);
+    $("#divTenLoaiBai").html("<div class='col-md-8'> <input name='ten' class='form-control' value='" + ten + "'/>" + "<input type='hidden' name='id' class='form-control' value='" + id + "'/></div><div class='col-md-3'><input type='submit' class='btn btn-success' value = 'Cập Nhật'/>  ");
+    $("#myModalSuaLoaiBai").modal();
+}
+    </script>
+
+     <!-- Modal -->
+  <div class="modal fade" id="myModalSuaLoaiBai" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sửa Loại Bài</h4>
+        </div>
+        <div class="modal-body">
+            <form method="get">
+          <label>Tên Loài Bài</label>
+            <div id="divTenLoaiBai" class="row">
+               
+            </div>
+                </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
     <div class="container-fluid">
         <form method="POST" class="form-horizontal" runat="server" enctype="multipart/form-data">
             <div class="row">
@@ -8,7 +43,7 @@
                     <h1 class="page-header">QUẢN LÝ LOẠI BÀI ĐĂNG</h1>
                 </div>
             </div>
-            <div class="row">sadasd                <div class="col-md-12">
+            <div class="row">  <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Danh sách LOẠI BÀI
@@ -35,9 +70,8 @@
 										            <td class="left"><%# Eval("sTenLoaiBai") %></td>
 										            
 											        <td class="left">
-												        <asp:LinkButton ID="btnFix" CssClass="btn btn-xs btn-warning" ToolTip="Sửa" runat="server" OnClick="btnFix_Click" CommandArgument='<%# Eval("iMaLoaiBai") %>'><i class="fa fa-times" aria-hidden="true"></i></asp:LinkButton>
-                                                        <asp:LinkButton ID="btnDelete" CssClass="btn btn-xs btn-danger" ToolTip="Xoá" runat="server" OnClick="btnDelete_Click"  OnClientClick="return confirm('Bạn có chắc chắn xoá ?')" CommandArgument='<%# Eval("iMaLoaiBai") %>'><i class="fa fa-times" aria-hidden="true"></i></asp:LinkButton>
-											        </td>
+                                                        <p class="btn btn-default" onclick="suaLoaiBai('<%# Eval("iMaLoaiBai") %>', '<%# Eval("sTenLoaiBai") %>')">Sửa</p>
+												    </td>
 									            </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

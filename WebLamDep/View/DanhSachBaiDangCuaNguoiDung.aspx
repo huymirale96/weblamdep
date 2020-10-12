@@ -29,6 +29,7 @@
                                             <th class="text-center">LOẠI TIN</th>
                                              <th class="text-center">NGƯỜI ĐĂNG</th>
 									        <th class="text-center">THỜI GIAN</th>
+                                              <th class="text-center">Số Lần Xem</th>
                                              <th class="text-center">TRẠNG THÁI</th>
                                             <th class="text-center">SỬA</th>
 									        
@@ -46,7 +47,7 @@
                                                     <td class="left"><%# Eval("stenloaibai") %></td>
                                                     <td class="left"><%# Eval("shoten") %></td>
                                                     <td class="left"><%# Eval("dngaydang") %></td>
-                                                    
+                                                     <td class="left"><%# Eval("iLanXem") %></td>
                                                      <td class="left"><%# Eval("imanguoiduyet").ToString().Equals("") ? "Chưa Duyệt" : "Đã Duyệt" %></td>
 											         <td class="left"><a href="SuaBaiViet.aspx?id=<%# Eval("iMaBaiViet") %>" ><label class="label label-default">Sửa Bài Viết</label></a></td>
 									            </tr>

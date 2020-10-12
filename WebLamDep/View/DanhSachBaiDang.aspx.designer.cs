@@ -22,6 +22,42 @@ namespace WebLamDep.View {
         protected global::System.Web.UI.WebControls.Label lblNoti;
         
         /// <summary>
+        /// txtTimKiem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTimKiem;
+        
+        /// <summary>
+        /// btnTimKiem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnTimKiem;
+        
+        /// <summary>
+        /// ddlLoaiBai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLoaiBai;
+        
+        /// <summary>
+        /// btnTimLoaiBai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnTimLoaiBai;
+        
+        /// <summary>
         /// rptDanhSach control.
         /// </summary>
         /// <remarks>
