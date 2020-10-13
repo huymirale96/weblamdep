@@ -8,7 +8,7 @@
                         <br/>
                         <i class="fa fa-newspaper-o fa-5x text-white" style="margin-top: 10px; font-size: 7em;"></i>
                         <div class="text-white-op push-15-t welcome-text">
-                            Phần mềm quản lý WEBSITE CHIA SẺ KIẾN THỨC SẮC ĐẸP - HUYĐN
+                            Phần mềm quản lý WEBSITE CHIA SẺ KIẾN THỨC SẮC ĐẸP
                         </div>
                     </div>
                 </div>

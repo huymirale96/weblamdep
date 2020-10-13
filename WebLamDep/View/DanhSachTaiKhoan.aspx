@@ -27,9 +27,9 @@
 									        <th class="text-center">SĐT</th>
                                             <th class="text-center">EMAIL</th>
                                              <th class="text-center">QUYỀN</th>
-									      
+									          <th class="text-center">TÁC VỤ</th>
 									        
-									        <th class="text-center">Tác vụ</th>
+									       
 								        </tr>
 							        </thead>
 							        <tbody>
@@ -42,13 +42,9 @@
 										         
                                                     <td class="left"><%# Eval("sSDT") %></td>
                                                     <td class="left"><%# Eval("semail") %></td>
-                                                    
+                                 
                                                     <td class="left"><%# Eval("iMaQuyen").ToString().Equals("1") ? "MEMBER " : "ADMIN" %></td>
-                                                     
-											        <td class="left">
-												        <asp:LinkButton ID="btnFix" CssClass="btn btn-xs btn-warning" ToolTip="Sửa" runat="server"  CommandArgument='<%# Eval("iMaNguoiDung") %>'><i class="fa fa-times" aria-hidden="true"></i></asp:LinkButton>
-                                                        <asp:LinkButton ID="btnDelete" CssClass="btn btn-xs btn-danger" ToolTip="Xoá" runat="server"  OnClientClick="return confirm('Bạn có chắc chắn xoá ?')" CommandArgument='<%# Eval("iMaNguoiDung") %>'><i class="fa fa-times" aria-hidden="true"></i></asp:LinkButton>--%>
-											        </td>
+                                                     <td class="text-center"><a href="SuaTaiKhoan.aspx?id=<%# Eval("imanguoidung") %>" class="btn btn-default">Sửa</a></td>   
 									            </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

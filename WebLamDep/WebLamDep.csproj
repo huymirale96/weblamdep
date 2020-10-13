@@ -601,6 +601,8 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="View\BaoCaoSoBaiCuaMoiNguoi.aspx" />
+    <Content Include="View\BaoCaoSoLanXemCuaMoiBai.aspx" />
     <Content Include="View\DanhSachBaiDang.aspx" />
     <Content Include="View\DanhSachBaiDangCuaNguoiDung.aspx" />
     <Content Include="View\DanhSachBaiViet.aspx" />
@@ -610,6 +612,7 @@
     <Content Include="View\Login.aspx" />
     <Content Include="View\QuanLyLoaiBai.aspx" />
     <Content Include="View\SuaBaiViet.aspx" />
+    <Content Include="View\SuaTaiKhoan.aspx" />
     <Content Include="View\ThemBaiViet.aspx" />
     <Content Include="View\ThemTaiKhoan.aspx" />
     <Content Include="View\TrangChu.aspx" />
@@ -630,6 +633,20 @@
     </Compile>
     <Compile Include="Model\ConnectDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\BaoCaoSoBaiCuaMoiNguoi.aspx.cs">
+      <DependentUpon>BaoCaoSoBaiCuaMoiNguoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BaoCaoSoBaiCuaMoiNguoi.aspx.designer.cs">
+      <DependentUpon>BaoCaoSoBaiCuaMoiNguoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\BaoCaoSoLanXemCuaMoiBai.aspx.cs">
+      <DependentUpon>BaoCaoSoLanXemCuaMoiBai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BaoCaoSoLanXemCuaMoiBai.aspx.designer.cs">
+      <DependentUpon>BaoCaoSoLanXemCuaMoiBai.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\DanhSachBaiDang.aspx.cs">
       <DependentUpon>DanhSachBaiDang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -692,6 +709,13 @@
     </Compile>
     <Compile Include="View\SuaBaiViet.aspx.designer.cs">
       <DependentUpon>SuaBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaTaiKhoan.aspx.cs">
+      <DependentUpon>SuaTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\SuaTaiKhoan.aspx.designer.cs">
+      <DependentUpon>SuaTaiKhoan.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\ThemBaiViet.aspx.cs">
       <DependentUpon>ThemBaiViet.aspx</DependentUpon>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Security.Cryptography;
 
 namespace WebLamDep.View
 {
@@ -30,13 +31,13 @@ namespace WebLamDep.View
                 SqlCommand cmd = new SqlCommand("get_thongtintaikhoan", myCnn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Taikhoan", tai_khoan);
-                cmd.Parameters.AddWithValue("@MatKhau", mat_khau);
+                cmd.Parameters.AddWithValue("@MatKhau", GetMD5(mat_khau));
                 SqlDataReader rd = cmd.ExecuteReader();
                 if (rd.HasRows)
                 {
                     while (rd.Read())
                     {
-                        if (rd["susername"].Equals(tai_khoan) && rd["spass"].Equals(mat_khau))
+                        if (rd["susername"].Equals(tai_khoan) && rd["spass"].Equals(GetMD5((mat_khau))) )
                         {
                             Session["login"] = true;
                             Session["tenTK"] = rd["shoten"];
@@ -58,6 +59,22 @@ namespace WebLamDep.View
                     lblNoti.Text = "Sai tên tài khoản hoặc mật khẩu!";
                 }
             }
+        }
+
+        public string GetMD5(string chuoi)
+        {
+            string str_md5 = "";
+            byte[] mang = System.Text.Encoding.UTF8.GetBytes(chuoi);
+
+            MD5CryptoServiceProvider my_md5 = new MD5CryptoServiceProvider();
+            mang = my_md5.ComputeHash(mang);
+
+            foreach (byte b in mang)
+            {
+                str_md5 += b.ToString("X2");
+            }
+
+            return str_md5;
         }
     }
 }

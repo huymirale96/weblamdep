@@ -96,11 +96,7 @@
                 <h2 class="h3 mb-3">About me</h2><img class="rounded-circle mb-3" src="../Content/trangds/author.jpg" alt="..." width="100">
                 <p class="text-small text-muted">Trang Web Làm Đẹp</p>
                 <ul class="list-inline small mb-0 text-dark">
-                  <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-linkedin"></i></a></li>
-                  <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-youtube"></i></a></li>
+                 
                 </ul>
               </div>
             </div>
@@ -128,9 +124,7 @@
             </div>
            
             <!-- Ad-->
-            <div class="card rounded-0 border-0 mb-4">
-              <div class="card-body p-0"><a class="d-block" href="#"><img class="img-fluid" src="../Content/trangds/banner.jpg" alt=""></a></div>
-            </div>
+           
           </div>
               <!-- Blog sidebar-->
         </div>

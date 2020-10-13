@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#"  MasterPageFile="~/Layout/App.Master"  AutoEventWireup="true" CodeBehind="ThemTaiKhoan.aspx.cs" Inherits="WebLamDep.View.ThemTaiKhoan" %>
+﻿<%@ Page Language="C#"  MasterPageFile="~/Layout/App.Master"  AutoEventWireup="true" CodeBehind="SuaTaiKhoan.aspx.cs" Inherits="WebLamDep.View.SuaTaiKhoan" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-header">THÊM TÀI KHOẢN</h1>
+                <h1 class="page-header">SỬA TÀI KHOẢN</h1>
             </div>
         </div>
         <div class="row">
@@ -20,6 +20,7 @@
                                  <asp:Label ID="lblDaDuyet" CssClass="text-success" runat="server"></asp:Label>
                             </div>
                             <form method="post" runat="server" class="form-horizontal">
+                                <asp:HiddenField ID="maNguoiDung" runat="server" />
                                 <div class="col-md-6">
                                     <div class="form-group">
                                          <label class="col-md-3 control-label-left">Họ Tên</label>
@@ -52,19 +53,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label-left">Tên Đăng Nhập</label>
-                                        <div class="col-md-9">
-                                            <asp:TextBox ID="txtTenDangNhap" runat="server" CssClass="form-control" />
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label-left">Mật Khẩu</label>
-                                        <div class="col-md-9">
-                                            <asp:TextBox ID="txtMK" runat="server" CssClass="form-control" />
-                                        </div>
-                                    </div>
+                                  
 
                                     <div class="form-group">
                                         <label class="col-md-3 control-label-left">Quyền</label>

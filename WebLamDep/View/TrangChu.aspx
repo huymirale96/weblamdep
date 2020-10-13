@@ -14,6 +14,8 @@
     <!-- Google fonts-->
     <link rel="stylesheet" href="../Content/frontend/css.css">
     <link rel="stylesheet" href="../Content/frontend/css_002.css">
+
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Lightbox-->
     <link rel="stylesheet" href="../Content/frontend/lightbox.css">
     <!-- theme stylesheet-->
@@ -35,7 +37,7 @@
         <div class="container d-flex justify-content-center justify-content-lg-between align-items-center">
           <ul class="list-inline small mb-0 text-dark d-none d-lg-block">
            
-          </ul><a class="navbar-brand" href=""><img src="../Content/frontend/logo.svg" alt="..." width="150"></a><a class="reset-anchor text-small mb-0 h6 d-none d-lg-block" href="login.aspx"><i class="far fa-envelope mr-2 text-primary"></i>Juliette@email.com</a>
+          </ul><a class="navbar-brand" href=""><img src="../Content/frontend/logo.svg" alt="..." width="150"></a><a class="reset-anchor text-small mb-0 h6 d-none d-lg-block" href="login.aspx">Trang ADMIN</a>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-light border-top border-bottom border-light">
@@ -156,7 +158,7 @@
             <!-- About category-->
             <div class="card rounded-0 border-0 bg-light mb-4 py-lg-4">
               <div class="card-body text-center">
-                <Me class="h3 mb-3">About Me><img class="rounded-circle mb-3" src="../Content/frontend/author.jpg" alt="..." width="100">
+                <Me class="h3 mb-3">About Me<img class="rounded-circle mb-3" src="../Content/frontend/author.jpg" alt="..." width="100">
                 <p class="text-small text-muted">Trang Web Chia Sẻ Kiến Thức Làm Đẹp</p>
                 <ul class="list-inline small mb-0 text-dark">
                 
@@ -226,7 +228,7 @@
             </div>
           </div>
           <div class="col-md-4 text-lg-right">
-            <p class="mb-0 text-muted text-small text-heading">Xinh Đẹp <a href="http://www.mailovesbeauty.vn/" class="text-reset"></a>. </p>
+            
           </div>
         </div>
       </div>
@@ -239,7 +241,7 @@
     <script src="../Content/frontend/front.js"></script>
     <script src="../Content/frontend/jquery.js"> </script>
     <script src="../Content/frontend/demo.js"> </script>
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-    <link rel="stylesheet" href="../Content/frontend/all.csss" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  
+   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+   <!--  <link rel="stylesheet" href="../Content/frontend/all.csss" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ -->
 <div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href=""></a><a class="lb-next" aria-label="Next image" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

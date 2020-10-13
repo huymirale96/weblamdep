@@ -110,15 +110,23 @@
                                     <li>
                                         <a href="ThemTaiKhoan.aspx">Cấp tài khoản</a>
                                     </li>
+                                   
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                              <li>
+                                <a href="#"><i class="fa fa-outdent fa-fw"></i>Báo Cáo - Thống Kê<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="#">Khoá tài khoản</a>
+                                        <a href="baoCaoSoBaiCuaMoiNguoi.aspx">Báo Cáo Số Lượng Bài Của Mỗi Người</a>
                                     </li>
                                     <li>
-                                        <a href="#">Mở khoá tài khoản</a>
+                                        <a href="BaoCaoSoLanXemCuaMoiBai.aspx">Báo Cáo Số Lần Xem Của Mỗi Bài</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
+
                               <% } %>
                         </ul>
                     </div>

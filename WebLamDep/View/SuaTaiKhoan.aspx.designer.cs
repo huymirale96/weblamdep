@@ -10,7 +10,7 @@
 namespace WebLamDep.View {
     
     
-    public partial class ThemTaiKhoan {
+    public partial class SuaTaiKhoan {
         
         /// <summary>
         /// lblNoti control.
@@ -29,6 +29,15 @@ namespace WebLamDep.View {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDaDuyet;
+        
+        /// <summary>
+        /// maNguoiDung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField maNguoiDung;
         
         /// <summary>
         /// txtTen control.
@@ -74,24 +83,6 @@ namespace WebLamDep.View {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox emailGV;
-        
-        /// <summary>
-        /// txtTenDangNhap control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenDangNhap;
-        
-        /// <summary>
-        /// txtMK control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMK;
         
         /// <summary>
         /// admin control.
