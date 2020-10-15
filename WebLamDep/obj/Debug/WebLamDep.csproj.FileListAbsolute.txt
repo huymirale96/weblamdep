@@ -1,5 +1,3 @@
-C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.csprojAssemblyReference.cache
-C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\WebLamDep.dll.config
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\WebLamDep.dll
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\WebLamDep.pdb
@@ -32,6 +30,8 @@ C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\roslyn\VBCSCompiler.exe.conf
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\CKEditor.NET.dll
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.dll
 C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.pdb
+C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.csprojAssemblyReference.cache
+C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\WebLamDep\WebLamDep\obj\Debug\WebLamDep.csproj.CopyComplete

@@ -17,6 +17,10 @@ namespace WebLamDep.View
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["login"] = false;
+            if (String.Compare(Session["quyen"].ToString(), "0") != 0)
+            {
+                Response.Redirect("welcome.aspx");
+            }
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)

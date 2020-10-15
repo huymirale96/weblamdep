@@ -37,7 +37,7 @@
         <div class="container d-flex justify-content-center justify-content-lg-between align-items-center">
           <ul class="list-inline small mb-0 text-dark d-none d-lg-block">
            
-          </ul><a class="navbar-brand" href=""><img src="../Content/frontend/logo.svg" alt="..." width="150"></a><a class="reset-anchor text-small mb-0 h6 d-none d-lg-block" href="login.aspx">Trang ADMIN</a>
+          </ul><a class="navbar-brand" href=""><img src="../Content/logo.png" alt="..." width="300"></a><a class="reset-anchor text-small mb-0 h6 d-none d-lg-block" href="login.aspx">Trang ADMIN</a>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-light border-top border-bottom border-light">
@@ -218,7 +218,7 @@
     <footer class="py-4" style="background: #111">
       <div class="container text-center">
         <div class="row align-items-center">
-          <div class="col-md-4 text-lg-left"><img src="../Content/frontend/logo-footer.svg" alt="..." width="120"></div>
+          <div class="col-md-4 text-lg-left"><img src="../Content/logo.png" alt="..." width="170"></div>
           <div class="col-md-4 text-center">
             <div class="d-flex align-items-center flex-wrap justify-content-center">
               <h6 class="text-muted mb-0 py-2 mr-3">Follow me<span class="ml-3">-</span></h6>

@@ -15,7 +15,7 @@ namespace WebLamDep.View
             {
                 if(String.Compare(Request.QueryString["cn"].ToString(),"dangxuat") == 0)
                 {
-                    Session["quyen"] = "";
+                    Session["quyen"] = "0";
                     Response.Redirect("Login.aspx");
                 }
             }

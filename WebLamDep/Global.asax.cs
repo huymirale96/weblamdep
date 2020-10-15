@@ -22,7 +22,7 @@ namespace WebLamDep
             Session["tenTK"] = "HUY";
             Session["maNguoiDung"] = "";
             Session["maGV"] = "";
-            Session["quyen"] = "5";
+            Session["quyen"] = "0";
             Session["type"] = "1";
             Session["mess"] = "1";
             Session["sessId"] = Session.SessionID;
