@@ -21,6 +21,7 @@ namespace WebLamDep.View
             {
                 xemBaiViet(Request.QueryString["id"].ToString());
                 load_danhSachbaiCungLoai(Request.QueryString["id"].ToString());
+                load_binhLuan(Request.QueryString["id"].ToString());
             }
             load_LoaiBaiViet();
         }
@@ -64,7 +65,7 @@ namespace WebLamDep.View
 
         void xemBaiViet(String id)
         {
-
+            maBai.Value = id;
             using (SqlConnection sqlConnection = conn.connectDatabase())
             {
                 SqlCommand cmd = new SqlCommand("sp_xemBaiVietID", sqlConnection);
@@ -94,6 +95,44 @@ namespace WebLamDep.View
                 sqlDataAdapter.Fill(dataTable);
                 rptLoaiBai.DataSource = dataTable;
                 rptLoaiBai.DataBind();
+            }
+        }
+
+        void load_binhLuan(string id)
+        {
+            using (SqlConnection sqlConnection = conn.connectDatabase())
+            {
+                SqlCommand cmd = new SqlCommand("sp_xembinhluan", sqlConnection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", id);
+
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+               rptBinhLuan.DataSource = dataTable;
+                rptBinhLuan.DataBind();
+            }
+        }
+
+        protected void btnBL_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlConnection = conn.connectDatabase())
+            {
+                SqlCommand sqlCommand = new SqlCommand("sp_themBinhLuan", sqlConnection);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                sqlCommand.Parameters.AddWithValue("@hoten", txtHoTen.Text);
+                sqlCommand.Parameters.AddWithValue("@email", txtEmail.Text);
+                sqlCommand.Parameters.AddWithValue("@noidung", txtBinhLuan.Text);
+                sqlCommand.Parameters.AddWithValue("@thoigian", DateTime.Now);
+                sqlCommand.Parameters.AddWithValue("@mabaiviet", maBai.Value);
+
+                //sqlCommand.Parameters.AddWithValue("@id", btn.CommandArgument.ToString());
+                int i = sqlCommand.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    Response.Redirect(Request.UrlReferrer.ToString());
+                }
+
             }
         }
     }

@@ -85,12 +85,11 @@ namespace WebLamDep.View
                 SqlCommand sqlCommand = new SqlCommand("sp_themLoaiBai", sqlConnection);
                 sqlCommand.CommandType = CommandType.StoredProcedure;
                 sqlCommand.Parameters.AddWithValue("@loaiBai", tenLoaiBai.Text);
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-                DataTable dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
-                rptLoaiBai.DataSource = dataTable;
-                rptLoaiBai.DataBind();
+           
+                sqlCommand.ExecuteNonQuery();
+                layDanhSachLoaiBai();
             }
         }
     }
 }
+//Response.Redirect(Request.UrlReferrer.ToString());

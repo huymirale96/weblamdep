@@ -50,7 +50,7 @@
                 <asp:Repeater ID="rptLoaiBai" runat="server">
                     <ItemTemplate>
               <li class="nav-item">
-                <!-- Navbar link--><a style="font-family: 'Roboto', sans-serif; margin-left: 25px;"  class="nav-link" href="DanhSachBaiViet.aspx?id=<%# Eval("iMaLoaiBai") %>"><%# Eval("stenloaibai") %></a>
+ 
               </li>
                 </ItemTemplate>
                 </asp:Repeater>
@@ -85,6 +85,48 @@
                 </asp:Repeater>
             
             </ul>
+
+                         <!-- Leave comment-->
+            <h3 class="h4 mb-4">Bình Luận</h3>
+            <form class="mb-5" runat="server" method="post" action="XemBaiViet.aspx" >
+                <asp:HiddenField ID="maBai" runat="server" />
+              <div class="row">
+                <div class="form-group col-lg-6">
+                 <asp:TextBox runat="server" ID="txtHoTen" CssClass="form-control" placeholder="Họ Tên" ></asp:TextBox>
+                </div>
+                <div class="form-group col-lg-6">
+                   <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" placeholder="Email" ></asp:TextBox>
+                </div>
+                <div class="form-group col-lg-12">
+                   <asp:TextBox runat="server" ID="txtBinhLuan" CssClass="form-control" Rows="3" TextMode="MultiLine"></asp:TextBox>
+                </div>
+                <div class="form-group col-lg-12">
+                  <asp:Button ID="btnBL" runat="server" CssClass="btn btn-primary" Text="Gửi Bình Luận"  OnClick="btnBL_Click"/>
+                </div>
+              </div>
+            </form>
+            <!-- Post comments-->
+            <h3 class="h4 mb-4">Danh Sách Các Bình Luận</h3>
+            <ul class="list-unstyled comments">
+             <asp:Repeater ID="rptBinhLuan" runat="server">
+                    <ItemTemplate>
+               <li>
+                <div class="media mb-4"><img class="rounded-circle shadow-sm img-fluid" src="../Content/person.jpg" alt="" width="60">
+                  <div class="media-body ml-3">
+                    <p class="small mb-0 text-primary"><%# Eval("dthoigian") %>"</p>
+                    <h5><%# Eval("shoten") %></h5>
+                    <p class="text-muted text-small mb-2"><%# Eval("snoidung") %></p>
+                  </div>
+                </div>
+              </li>
+
+                    </ItemTemplate>
+                </asp:Repeater>
+            
+            </ul>
+        
+
+
                </div>
                  </div>
 
