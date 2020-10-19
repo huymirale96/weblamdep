@@ -619,6 +619,7 @@
     <Content Include="View\TrangChu.aspx" />
     <Content Include="View\Welcome.aspx" />
     <Content Include="View\XemBaiViet.aspx" />
+    <Content Include="View\XemBinhLuan.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -752,6 +753,13 @@
     </Compile>
     <Compile Include="View\XemBaiViet.aspx.designer.cs">
       <DependentUpon>XemBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\XemBinhLuan.aspx.cs">
+      <DependentUpon>XemBinhLuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\XemBinhLuan.aspx.designer.cs">
+      <DependentUpon>XemBinhLuan.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

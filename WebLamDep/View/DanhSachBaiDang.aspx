@@ -65,6 +65,7 @@
 											        <td class="center">
                                                         <asp:LinkButton ID="btnDuyet" CssClass="btn btn-xs btn-primary" ToolTip="Duyệt" runat="server" OnClick="btnDuyet_Click"    CommandArgument='<%# Eval("iMaBaiViet") %>'><i class="fa fa-check" aria-hidden="true"></i></asp:LinkButton>
 												     <a href="SuaBaiViet.aspx?id=<%# Eval("iMaBaiViet") %>">  <i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                         <a href="xembinhluan.aspx?id=<%# Eval("iMaBaiViet") %>">  <i class="fa fa-comment" aria-hidden="true"></i></a>
                                                         <%--<asp:LinkButton ID="btnFix" CssClass="btn btn-xs btn-warning" ToolTip="Sửa" runat="server" OnClick= CommandArgument='<%# Eval("iMaLoaiBai") %>'><i class="fa fa-times" aria-hidden="true"></i></asp:LinkButton>
                                                         <asp:LinkButton ID="btnDelete" CssClass="btn btn-xs btn-danger" ToolTip="Xoá" runat="server" OnClick="btnDelete_Click"  OnClientClick="return confirm('Bạn có chắc chắn xoá ?')" CommandArgument='<%# Eval("iMaLoaiBai") %>'><i class="fa fa-times" aria-hidden="true"></i></asp:LinkButton>--%>
 											        </td>

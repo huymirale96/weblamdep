@@ -143,15 +143,7 @@
                 <cite class="text-white" title="Source Title">Kiến Thức Làm Đẹp</cite>
               </footer>
             </blockquote>
-            <!-- Pagination-->
-            <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">«</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">»</a></li>
-              </ul>
-            </nav>
+       
           </div>
           <!-- Blog sidebar-->
           <div class="col-lg-3">
