@@ -20,6 +20,7 @@ namespace WebLamDep.View
              //   load_LoaiBai();
                 if (Request.QueryString["id"] != null)
                 {
+                    loadThongTinBai(Request.QueryString["id"].ToString());
                     layDanhSachBinhLuan(Request.QueryString["id"].ToString());
                 }
             }
@@ -72,6 +73,21 @@ namespace WebLamDep.View
                 sqlDataAdapter.Fill(dataTable);
                 rptDanhSach.DataSource = dataTable;
                 rptDanhSach.DataBind();
+            }
+        }
+
+        void loadThongTinBai(String id)
+        {
+            using (SqlConnection sqlConnection = conn.connectDatabase())
+            {
+
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("select * from tblbaiviet where iMaBaiViet= " + id, sqlConnection);
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+              
+                tieuDe.Text = dataTable.Rows[0]["stieude"].ToString();
+               
+                // Debug.WriteLine("nhan dc loi  " + tieuDe.Text + "  tieu de  " + dataTable.Rows[0]["stieude"].ToString());
             }
         }
     }

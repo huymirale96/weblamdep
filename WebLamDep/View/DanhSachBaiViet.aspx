@@ -144,7 +144,7 @@
           <div class="col-md-4 text-lg-left"><img src="../Content/logo.png" alt="..." width="120"></div>
           <div class="col-md-4 text-center">
             <div class="d-flex align-items-center flex-wrap justify-content-center">
-              <h6 class="text-muted mb-0 py-2 mr-3">Follow me<span class="ml-3">-</span></h6>
+              <h6 class="text-muted mb-0 py-2 mr-3">Liên Hệ: hoitro@beautiful.com<span class="ml-3">-</span></h6>
               <ul class="list-inline small mb-0 text-white">
               
               </ul>

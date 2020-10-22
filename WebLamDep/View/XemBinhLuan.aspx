@@ -15,6 +15,12 @@
                             Danh sách
                         </div>
                         <div class="panel-body">
+                            <div class="form-group">
+                                        <label class="col-md-2 control-label-left">Tiêu Đề</label>
+                                        <div class="col-md-8">
+                                            <asp:TextBox ID="tieuDe"  CssClass="form-control" runat="server" TextMode="MultiLine" Rows="3"  ReadOnly="true"  ></asp:TextBox>
+                                        </div>
+                                </div>
                             <div class="text-center">
                                 <asp:Label ID="lblNoti" runat="server" Text=""></asp:Label>
                             </div>
