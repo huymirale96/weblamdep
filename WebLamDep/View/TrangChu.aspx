@@ -53,7 +53,7 @@
                 <!-- Navbar link--><a style="font-family: 'Roboto', sans-serif; margin-left: 25px;"  class="nav-link" href="trangchu.aspx">Trang Chủ</a>
               </li>
              <%-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="listingVariants" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog Listing</a>
-                <div class="dropdown-menu mt-2" aria-labelledby="listingVariants"><a class="dropdown-item" href="https://demo.bootstraptemple.com/juliette/listing-1.html">Post column</a><a class="dropdown-item" href="https://demo.bootstraptemple.com/juliette/listing-2.html">Post row</a></div>
+                <div class="dropdown-menu mt-2" aria-labelledby="listingVariants"><a class="dropdown-item" href="l">Post row</a></div>
               </li>--%>
 
 

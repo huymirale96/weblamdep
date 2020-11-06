@@ -49,8 +49,8 @@
              
                 <asp:Repeater ID="rptLoaiBai" runat="server">
                     <ItemTemplate>
-              <li class="nav-item">
- 
+             <li class="nav-item">
+                <!-- Navbar link--><a style="font-family: 'Roboto', sans-serif; margin-left: 25px;" class="nav-link" href="DanhSachBaiViet.aspx?id=<%# Eval("iMaLoaiBai") %>"><%# Eval("stenloaibai") %></a>
               </li>
                 </ItemTemplate>
                 </asp:Repeater>
