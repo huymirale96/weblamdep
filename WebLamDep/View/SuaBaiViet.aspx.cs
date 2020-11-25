@@ -39,7 +39,7 @@ namespace WebLamDep.View
                 mota.Text = dataTable.Rows[0]["smota"].ToString();
                 tieuDe.Text = dataTable.Rows[0]["stieude"].ToString();
                 maBai.Value = dataTable.Rows[0]["iMaBaiViet"].ToString();
-                ddlLoaiBia.SelectedValue = tieuDe.Text = dataTable.Rows[0]["iMaLoaiBai"].ToString();
+                ddlLoaiBia.SelectedValue =  dataTable.Rows[0]["iMaLoaiBai"].ToString();
 
                // Debug.WriteLine("nhan dc loi  " + tieuDe.Text + "  tieu de  " + dataTable.Rows[0]["stieude"].ToString());
             }

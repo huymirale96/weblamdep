@@ -2082,7 +2082,7 @@ a.text-hover-dark {
 }
 
 body {
-    font-family: "Open Sans",sans-serif;
+    /*font-family: "Open Sans",sans-serif;*/
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
