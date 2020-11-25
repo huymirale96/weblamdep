@@ -9,6 +9,8 @@ namespace WebLamDep.Model
     public class ConnectDatabase
     {
         public string strCon = @"Data Source=DESKTOP-C1VSI5K\SQLEXPRESS;Initial Catalog=webTinTuc1;Integrated Security=True";
+       ///2 public string strCon = @"Data Source=DESKTOP-LT0DBKK\MSSQLSERVER03;Initial Catalog=webTinTuc1_3;Integrated Security=True";
+
         public SqlConnection connectDatabase()
         {
             SqlConnection myCnn = new SqlConnection(strCon);
