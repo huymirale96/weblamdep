@@ -74,7 +74,7 @@ namespace WebLamDep.View
                 rptDanhSach.DataSource = dataTable;
                 rptDanhSach.DataBind();
 
-
+                // lay so luong cmt
                 soLuongcmt.Text = "Có: " + dataTable.Rows.Count.ToString() + " Bình Luận";
             }
         }
