@@ -73,8 +73,13 @@ namespace WebLamDep.View
                 sqlDataAdapter.Fill(dataTable);
                 rptDanhSach.DataSource = dataTable;
                 rptDanhSach.DataBind();
+
+
+                soLuongcmt.Text = "Có: " + dataTable.Rows.Count.ToString() + " Bình Luận";
             }
         }
+
+      
 
         void loadThongTinBai(String id)
         {

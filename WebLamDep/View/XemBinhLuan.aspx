@@ -17,6 +17,8 @@
                         <div class="panel-body">
                             <div class="form-group">
                                         <label class="col-md-2 control-label-left">Tiêu Đề</label>
+                                        <label class="col-md-2 control-label-left" style="clear: both;">
+                                        <asp:Label runat="server" ID="soLuongcmt"></asp:Label></label>
                                         <div class="col-md-8">
                                             <asp:TextBox ID="tieuDe"  CssClass="form-control" runat="server" TextMode="MultiLine" Rows="3"  ReadOnly="true"  ></asp:TextBox>
                                         </div>

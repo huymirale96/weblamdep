@@ -22,6 +22,15 @@ namespace WebLamDep.View {
         protected global::System.Web.UI.WebControls.HiddenField maBai;
         
         /// <summary>
+        /// soLuongcmt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label soLuongcmt;
+        
+        /// <summary>
         /// tieuDe control.
         /// </summary>
         /// <remarks>
